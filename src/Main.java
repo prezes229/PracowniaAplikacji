@@ -6,4 +6,8 @@ void main() {
     System.out.println("Bartek");
     System.out.println("Kasia");
 
+    // Zadanie 2
+    String imie = "Maciek";
+    int rokUrodzenia = 2008;
+    double liczba = 0.66;
 }
