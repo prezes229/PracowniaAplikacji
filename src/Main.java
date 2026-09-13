@@ -10,4 +10,9 @@ void main() {
     String imie = "Maciek";
     int rokUrodzenia = 2008;
     double liczba = 0.66;
+
+    // Zadanie 3
+    int obecnyRok = 2026;
+    System.out.println("Mam na imię " + imie + ", mam " + (obecnyRok - rokUrodzenia) + " lat i będę pisać maturę za " + liczba + " roku.");
+
 }
