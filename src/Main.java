@@ -55,5 +55,11 @@ void main() {
 
     double wynik = (double) x / y;
     System.out.println(wynik);
+    //zadanie 9
+    System.out.println("Podaj słowo do zamiany na wielkie litery:");
+    String tekst = scanner.nextLine();
+
+    System.out.println(tekst.toUpperCase());
+
 
 }
