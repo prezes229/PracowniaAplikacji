@@ -43,5 +43,11 @@ void main() {
 
     System.out.println(slowo3 + ", " + slowo2 + ", " + slowo1);
 
+    //zadanie 7
+    System.out.println("Podaj jedno słowo:");
+    String wyraz = scanner.nextLine();
+
+    System.out.println("Liczba znaków: " + wyraz.length());
+
 
 }
