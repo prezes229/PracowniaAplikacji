@@ -33,7 +33,15 @@ void main() {
     int obwod = bok1 + bok2 + bok3;
     System.out.println("Obwód trójkąta wynosi: " + obwod);
 
+    //zadanie 6
+    scanner.nextLine();
 
+    System.out.println("Podaj trzy słowa:");
+    String slowo1 = scanner.nextLine();
+    String slowo2 = scanner.nextLine();
+    String slowo3 = scanner.nextLine();
+
+    System.out.println(slowo3 + ", " + slowo2 + ", " + slowo1);
 
 
 }
