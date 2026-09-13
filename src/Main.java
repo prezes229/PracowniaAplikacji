@@ -61,5 +61,11 @@ void main() {
 
     System.out.println(tekst.toUpperCase());
 
+    //zadanie 10
+    System.out.println("Podaj promień koła:");
+    int r = scanner.nextInt();
+
+    double pole = Math.PI * r * r;
+    System.out.println("Pole koła wynosi: " + pole);
 
 }
