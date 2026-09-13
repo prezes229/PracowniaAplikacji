@@ -49,5 +49,11 @@ void main() {
 
     System.out.println("Liczba znaków: " + wyraz.length());
 
+    //zadanie 8
+    int x = 5;
+    int y = 2;
+
+    double wynik = (double) x / y;
+    System.out.println(wynik);
 
 }
