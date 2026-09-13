@@ -24,4 +24,16 @@ void main() {
 
     System.out.println("Temperatura w Fahrenheitach: " + fahrenheit);
 
+   //zadanie 5
+    System.out.println("Podaj trzy boki trójkąta:");
+    int bok1 = scanner.nextInt();
+    int bok2 = scanner.nextInt();
+    int bok3 = scanner.nextInt();
+
+    int obwod = bok1 + bok2 + bok3;
+    System.out.println("Obwód trójkąta wynosi: " + obwod);
+
+
+
+
 }
