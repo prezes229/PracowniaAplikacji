@@ -14,5 +14,12 @@ void main() {
     // Zadanie 3
     int obecnyRok = 2026;
     System.out.println("Mam na imię " + imie + ", mam " + (obecnyRok - rokUrodzenia) + " lat i będę pisać maturę za " + liczba + " roku.");
+    //zadanie 4
+    System.out.println("Podaj temperaturę w stopniach Celsjusza:");
+    double stopnie = scanner.nextDouble();
+
+    double fahrenheit = 1.8 * stopnie + 32.0;
+
+    System.out.println("Temperatura w Fahrenheitach: " + fahrenheit);
 
 }
