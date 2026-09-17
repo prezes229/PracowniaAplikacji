@@ -5,16 +5,11 @@ public class Main {
 
     Scanner scanner = new Scanner(System.in);
 
-    // Zadanie 6
-    System.out.println("\nZadanie 6");
-    System.out.println("Podaj swoje imię:");
-    String podaneImie = scanner.next();
+    // Zadanie 7
+    System.out.println("\nZadanie 7");
+    System.out.println("Podaj swój wiek:");
+    int wiek = scanner.nextInt();
 
-    String mojeImie = "Maciek";
+    boolean pelnoletni = wiek >= 18 ? true : false;
 
-    if (podaneImie.equals(mojeImie)) {
-    System.out.println("Twoje imię jest takie samo jak moje");
-} else {
-    System.out.println("Twoje imię jest inne niż moje");
-}
-
+    System.out.println("Czy jesteś pełnoletni? " + pelnoletni);
