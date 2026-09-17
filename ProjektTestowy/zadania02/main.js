@@ -6,13 +6,22 @@ public class Main {
     Scanner scanner = new Scanner(System.in);
 
 
-    // Zadanie 8
-    System.out.println("\nZadanie 8");
-    System.out.println("Podaj rok:");
-    int rok = scanner.nextInt();
+    // Zadanie 9
+    System.out.println("\nZadanie 9");
+    System.out.println("Podaj wagę w kilogramach:");
+    double waga = scanner.nextDouble();
 
-    if ((rok % 4 == 0 && rok % 100 != 0) || rok % 400 == 0) {
-    System.out.println("Rok jest przestępny");
+    System.out.println("Podaj wzrost w metrach:");
+    double wzrost = scanner.nextDouble();
+
+    double bmi = waga / (wzrost * wzrost);
+
+    System.out.println("BMI: " + bmi);
+
+    if (bmi < 18.5) {
+    System.out.println("niedowaga");
+} else if (bmi <= 24.9) {
+    System.out.println("waga prawidłowa");
 } else {
-    System.out.println("Rok nie jest przestępny");
+    System.out.println("nadwaga");
 }
