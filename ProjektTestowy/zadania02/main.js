@@ -6,17 +6,25 @@ public class Main {
     Scanner scanner = new Scanner(System.in);
 
 
+// Zadanie 4
+    System.out.println("\nZadanie 4");
+    System.out.println("Podaj pierwszą liczbę:");
+    double a = scanner.nextDouble();
 
-// Zadanie 3
-System.out.println("\nZadanie 3");
-System.out.println("Podaj pierwszą liczbę:");
-double liczba1 = scanner.nextDouble();
+    System.out.println("Podaj drugą liczbę:");
+    double b = scanner.nextDouble();
 
-System.out.println("Podaj drugą liczbę:");
-double liczba2 = scanner.nextDouble();
+    System.out.println("Podaj trzecią liczbę:");
+    double c = scanner.nextDouble();
 
-if (liczba1 > liczba2) {
-    System.out.println("Największa liczba: " + liczba1);
-} else {
-    System.out.println("Największa liczba: " + liczba2);
+    double najwieksza = a;
+
+    if (b > najwieksza) {
+    najwieksza = b;
 }
+
+if (c > najwieksza) {
+    najwieksza = c;
+}
+
+System.out.println("Największa liczba: " + najwieksza);
