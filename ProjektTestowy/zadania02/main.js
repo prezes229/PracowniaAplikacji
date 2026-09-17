@@ -5,26 +5,49 @@ public class Main {
 
     Scanner scanner = new Scanner(System.in);
 
+    // Zadanie 5
+    System.out.println("\nZadanie 5");
+    System.out.println("Podaj numer miesiąca:");
+    int miesiac = scanner.nextInt();
 
-// Zadanie 4
-    System.out.println("\nZadanie 4");
-    System.out.println("Podaj pierwszą liczbę:");
-    double a = scanner.nextDouble();
+    switch (miesiac) {
+    case 1:
+        System.out.println("Styczeń");
+        break;
+    case 2:
+        System.out.println("Luty");
+        break;
+    case 3:
+        System.out.println("Marzec");
+        break;
+    case 4:
+        System.out.println("Kwiecień");
+        break;
+    case 5:
+        System.out.println("Maj");
+        break;
+    case 6:
+        System.out.println("Czerwiec");
+        break;
+    case 7:
+        System.out.println("Lipiec");
+        break;
+    case 8:
+        System.out.println("Sierpień");
+        break;
+    case 9:
+        System.out.println("Wrzesień");
+        break;
+    case 10:
+        System.out.println("Październik");
+        break;
+    case 11:
+        System.out.println("Listopad");
+        break;
+    case 12:
+        System.out.println("Grudzień");
+        break;
+    default:
+        System.out.println("Nieprawidlowy numer miesiaca");
+    }
 
-    System.out.println("Podaj drugą liczbę:");
-    double b = scanner.nextDouble();
-
-    System.out.println("Podaj trzecią liczbę:");
-    double c = scanner.nextDouble();
-
-    double najwieksza = a;
-
-    if (b > najwieksza) {
-    najwieksza = b;
-}
-
-if (c > najwieksza) {
-    najwieksza = c;
-}
-
-System.out.println("Największa liczba: " + najwieksza);
