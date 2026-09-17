@@ -5,11 +5,14 @@ public class Main {
 
     Scanner scanner = new Scanner(System.in);
 
-    // Zadanie 7
-    System.out.println("\nZadanie 7");
-    System.out.println("Podaj swój wiek:");
-    int wiek = scanner.nextInt();
 
-    boolean pelnoletni = wiek >= 18 ? true : false;
+    // Zadanie 8
+    System.out.println("\nZadanie 8");
+    System.out.println("Podaj rok:");
+    int rok = scanner.nextInt();
 
-    System.out.println("Czy jesteś pełnoletni? " + pelnoletni);
+    if ((rok % 4 == 0 && rok % 100 != 0) || rok % 400 == 0) {
+    System.out.println("Rok jest przestępny");
+} else {
+    System.out.println("Rok nie jest przestępny");
+}
