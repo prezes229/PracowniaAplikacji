@@ -29,3 +29,16 @@ if (bok1 + bok2 > bok3 && bok1 + bok3 > bok2 && bok2 + bok3 > bok1) {
 } else {
     System.out.println("Nie można zbudować trójkąta");
 }
+// Zadanie 3
+System.out.println("\nZadanie 3");
+System.out.println("Podaj pierwszą liczbę:");
+double liczba1 = scanner.nextDouble();
+
+System.out.println("Podaj drugą liczbę:");
+double liczba2 = scanner.nextDouble();
+
+if (liczba1 > liczba2) {
+    System.out.println("Największa liczba: " + liczba1);
+} else {
+    System.out.println("Największa liczba: " + liczba2);
+}
