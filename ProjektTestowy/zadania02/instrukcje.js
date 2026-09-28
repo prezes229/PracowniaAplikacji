@@ -133,3 +133,15 @@ switch (miesiac) {
     default:
         System.out.println("Nieprawidlowy numer miesiaca");
 }
+// Zadanie 6
+System.out.println("\nZadanie 6");
+System.out.println("Podaj swoje imię:");
+String podaneImie = scanner.next();
+
+String mojeImie = "Maciek";
+
+if (podaneImie.equals(mojeImie)) {
+    System.out.println("Twoje imię jest takie samo jak moje");
+} else {
+    System.out.println("Twoje imię jest inne niż moje");
+}
