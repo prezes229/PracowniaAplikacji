@@ -145,3 +145,23 @@ if (podaneImie.equals(mojeImie)) {
 } else {
     System.out.println("Twoje imię jest inne niż moje");
 }
+// Zadanie 7
+System.out.println("\nZadanie 7");
+System.out.println("Podaj swój wiek:");
+int wiek = scanner.nextInt();
+
+boolean pelnoletni = wiek >= 18 ? true : false;
+
+System.out.println("Czy jesteś pełnoletni? " + pelnoletni);
+
+
+// Zadanie 8
+System.out.println("\nZadanie 8");
+System.out.println("Podaj rok:");
+int rok = scanner.nextInt();
+
+if ((rok % 4 == 0 && rok % 100 != 0) || rok % 400 == 0) {
+    System.out.println("Rok jest przestępny");
+} else {
+    System.out.println("Rok nie jest przestępny");
+}
