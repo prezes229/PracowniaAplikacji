@@ -165,3 +165,61 @@ if ((rok % 4 == 0 && rok % 100 != 0) || rok % 400 == 0) {
 } else {
     System.out.println("Rok nie jest przestępny");
 }
+// Zadanie 9
+System.out.println("\nZadanie 9");
+System.out.println("Podaj wagę w kilogramach:");
+double waga = scanner.nextDouble();
+
+System.out.println("Podaj wzrost w metrach:");
+double wzrost = scanner.nextDouble();
+
+double bmi = waga / (wzrost * wzrost);
+
+System.out.println("BMI: " + bmi);
+
+if (bmi < 18.5) {
+    System.out.println("niedowaga");
+} else if (bmi <= 24.9) {
+    System.out.println("waga prawidłowa");
+} else {
+    System.out.println("nadwaga");
+}
+
+
+// Zadanie 10
+System.out.println("\nZadanie 10");
+
+double cena;
+int liczbaRat;
+
+do {
+    System.out.println("Podaj cenę towaru od 100 do 10000 zł:");
+    cena = scanner.nextDouble();
+
+    if (cena < 100 || cena > 10000) {
+        System.out.println("Nieprawidłowa cena.");
+    }
+} while (cena < 100 || cena > 10000);
+
+do {
+    System.out.println("Podaj liczbę rat od 6 do 48:");
+    liczbaRat = scanner.nextInt();
+
+    if (liczbaRat < 6 || liczbaRat > 48) {
+        System.out.println("Nieprawidłowa liczba rat.");
+    }
+} while (liczbaRat < 6 || liczbaRat > 48);
+
+double oprocentowanie;
+
+if (liczbaRat >= 6 && liczbaRat <= 12) {
+    oprocentowanie = 0.025;
+} else if (liczbaRat <= 24) {
+    oprocentowanie = 0.05;
+} else {
+    oprocentowanie = 0.10;
+}
+
+double rata = (cena + cena * oprocentowanie) / liczbaRat;
+
+System.out.println("Miesięczna rata wynosi: " + rata + " zł");
