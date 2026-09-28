@@ -42,3 +42,24 @@ if (liczba1 > liczba2) {
 } else {
     System.out.println("Największa liczba: " + liczba2);
 }
+System.out.println("\nZadanie 4");
+System.out.println("Podaj pierwszą liczbę:");
+double a = scanner.nextDouble();
+
+System.out.println("Podaj drugą liczbę:");
+double b = scanner.nextDouble();
+
+System.out.println("Podaj trzecią liczbę:");
+double c = scanner.nextDouble();
+
+double najwieksza = a;
+
+if (b > najwieksza) {
+    najwieksza = b;
+}
+
+if (c > najwieksza) {
+    najwieksza = c;
+}
+
+System.out.println("Największa liczba: " + najwieksza);
