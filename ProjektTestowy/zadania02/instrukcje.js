@@ -223,3 +223,49 @@ if (liczbaRat >= 6 && liczbaRat <= 12) {
 double rata = (cena + cena * oprocentowanie) / liczbaRat;
 
 System.out.println("Miesięczna rata wynosi: " + rata + " zł");
+// Zadanie 11
+System.out.println("\nZadanie 11");
+System.out.println("Prosty kalkulator");
+
+System.out.println("Podaj pierwszą liczbę:");
+double pierwsza = scanner.nextDouble();
+
+System.out.println("Podaj symbol działania (+, -, *, /):");
+char operacja = scanner.next().charAt(0);
+
+System.out.println("Podaj drugą liczbę:");
+double druga = scanner.nextDouble();
+
+double wynik;
+
+switch (operacja) {
+    case '+':
+        wynik = pierwsza + druga;
+        System.out.println("Wynik: " + wynik);
+        break;
+
+    case '-':
+        wynik = pierwsza - druga;
+        System.out.println("Wynik: " + wynik);
+        break;
+
+    case '*':
+        wynik = pierwsza * druga;
+        System.out.println("Wynik: " + wynik);
+        break;
+
+    case '/':
+        if (druga == 0) {
+            System.out.println("Nie można dzielić przez zero");
+        } else {
+            wynik = pierwsza / druga;
+            System.out.println("Wynik: " + wynik);
+        }
+        break;
+
+    default:
+        System.out.println("Błędny symbol działania");
+}
+
+scanner.close();
+}
