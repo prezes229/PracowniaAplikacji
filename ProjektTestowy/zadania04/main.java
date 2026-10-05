@@ -93,3 +93,25 @@ void main() {
     }
 
     System.out.println();
+    // Zadanie 6
+
+    int[] liczby2 = new int[5];
+
+    System.out.println("Zadanie 6:");
+
+    for (int i = 0; i < 5; i++) {
+        System.out.println("Podaj liczbę:");
+        liczby2[i] = scanner.nextInt();
+    }
+
+    for (int liczba : liczby2) {
+
+        int silnia = 1;
+
+        for (int i = 1; i <= liczba; i++) {
+            silnia = silnia * i;
+        }
+
+        System.out.println(liczba + "! = " + silnia);
+    }
+
