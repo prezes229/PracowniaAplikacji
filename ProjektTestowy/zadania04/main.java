@@ -202,3 +202,35 @@ void main() {
 
     System.out.println();
 
+// Zadanie 9
+
+    int[] tablica7 = new int[20];
+
+    System.out.println("Zadanie 9:");
+
+    for (int i = 0; i < 20; i++) {
+        tablica7[i] = random.nextInt(10) + 1;
+    }
+
+    System.out.println("Tablica:");
+
+    for (int liczba : tablica7) {
+        System.out.print(liczba + " ");
+    }
+
+    System.out.println();
+
+    for (int liczba = 1; liczba <= 10; liczba++) {
+
+        int ile = 0;
+
+        for (int element : tablica7) {
+
+            if (element == liczba) {
+                ile++;
+            }
+        }
+
+        System.out.println(liczba + " występuje " + ile + " razy");
+    }
+}
