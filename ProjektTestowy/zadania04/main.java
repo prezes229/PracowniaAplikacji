@@ -31,3 +31,13 @@ void main() {
 
     System.out.println("Zadanie 2:");
     System.out.println("Największa liczba: " + najwieksza);
+
+    // Zadanie 3
+
+    String[] slowa = {"Ala", "Bartek", "Kasia", "Java"};
+
+    System.out.println("Zadanie 3:");
+
+    for (String slowo : slowa) {
+        System.out.println(slowo.toUpperCase());
+    }
