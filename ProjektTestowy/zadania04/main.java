@@ -62,3 +62,34 @@ void main() {
 
         System.out.println();
     }
+// Zadanie 5
+
+    int[] liczby = new int[8];
+
+    System.out.println("Zadanie 5:");
+
+    for (int i = 0; i < 8; i++) {
+        System.out.println("Podaj liczbę:");
+        liczby[i] = scanner.nextInt();
+    }
+
+    for (int i = 0; i < liczby.length - 1; i++) {
+
+        for (int j = 0; j < liczby.length - 1; j++) {
+
+            if (liczby[j] > liczby[j + 1]) {
+
+                int pomocnicza = liczby[j];
+                liczby[j] = liczby[j + 1];
+                liczby[j + 1] = pomocnicza;
+            }
+        }
+    }
+
+    System.out.println("Posortowana tablica:");
+
+    for (int liczba : liczby) {
+        System.out.print(liczba + " ");
+    }
+
+    System.out.println();
