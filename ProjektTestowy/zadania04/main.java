@@ -136,3 +136,69 @@ void main() {
     } else {
         System.out.println("Tablice nie są takie same");
     }
+    // Zadanie 8
+
+    Random random = new Random();
+
+    int[] tablica6 = new int[10];
+
+    int suma = 0;
+
+    System.out.println("Zadanie 8:");
+
+    for (int i = 0; i < 10; i++) {
+        tablica6[i] = random.nextInt(21) - 10;
+        suma = suma + tablica6[i];
+    }
+
+    System.out.println("Tablica:");
+
+    for (int liczba : tablica6) {
+        System.out.print(liczba + " ");
+    }
+
+    int najmniejsza = tablica6[0];
+    int najwieksza2 = tablica6[0];
+
+    for (int liczba : tablica6) {
+
+        if (liczba < najmniejsza) {
+            najmniejsza = liczba;
+        }
+
+        if (liczba > najwieksza2) {
+            najwieksza2 = liczba;
+        }
+    }
+
+    double srednia = (double) suma / 10;
+
+    int mniejsze = 0;
+    int wieksze = 0;
+
+    for (int liczba : tablica6) {
+
+        if (liczba < srednia) {
+            mniejsze++;
+        }
+
+        if (liczba > srednia) {
+            wieksze++;
+        }
+    }
+
+    System.out.println();
+    System.out.println("Najmniejsza: " + najmniejsza);
+    System.out.println("Największa: " + najwieksza2);
+    System.out.println("Średnia: " + srednia);
+    System.out.println("Mniejszych od średniej: " + mniejsze);
+    System.out.println("Większych od średniej: " + wieksze);
+
+    System.out.println("Tablica od końca:");
+
+    for (int i = 9; i >= 0; i--) {
+        System.out.print(tablica6[i] + " ");
+    }
+
+    System.out.println();
+
