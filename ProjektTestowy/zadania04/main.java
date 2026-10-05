@@ -17,3 +17,17 @@ void main() {
     for (int i = 0; i < tablica2.length; i += 2) {
         System.out.println(tablica2[i]);
     }
+    // Zadanie 2
+
+    int[] tablica3 = {5, 10, 2, 20, 7};
+
+    int najwieksza = tablica3[0];
+
+    for (int liczba : tablica3) {
+        if (liczba > najwieksza) {
+            najwieksza = liczba;
+        }
+    }
+
+    System.out.println("Zadanie 2:");
+    System.out.println("Największa liczba: " + najwieksza);
