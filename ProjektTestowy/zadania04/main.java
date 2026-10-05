@@ -115,3 +115,24 @@ void main() {
         System.out.println(liczba + "! = " + silnia);
     }
 
+// Zadanie 7
+
+    String[] tablica4 = {"Ala", "Bartek", "Kasia"};
+    String[] tablica5 = {"Ala", "Bartek", "Kasia"};
+
+    boolean takieSame = true;
+
+    for (int i = 0; i < tablica4.length; i++) {
+
+        if (!tablica4[i].equals(tablica5[i])) {
+            takieSame = false;
+        }
+    }
+
+    System.out.println("Zadanie 7:");
+
+    if (takieSame) {
+        System.out.println("Tablice są takie same");
+    } else {
+        System.out.println("Tablice nie są takie same");
+    }
